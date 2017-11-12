@@ -1,6 +1,5 @@
 # TODO:
 # - fix tests - zope.testing upgrade needed ?
-# - .pth files ?
 
 %bcond_with	doc	# don't build doc
 %bcond_with	tests	# do not perform "make test"
@@ -11,10 +10,10 @@
 %define		egg_name	zc.lockfile
 %define		pypi_name	zc.lockfile
 Summary:	Basic inter-process locks
-Summary(pl.UTF-8):	Podstawowe blokady pomiędzy procesami
+Summary(pl.UTF-8):	Podstawowe blokady pomiędzy procesami 
 Name:		python-%{pypi_name}
 Version:	1.2.1
-Release:	0.2
+Release:	1
 License:	ZPL 2.1
 Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/z/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
@@ -36,7 +35,7 @@ BuildRequires:	python3-zope.testing
 
 %endif
 # when using /usr/bin/env or other in-place substitutions
-#BuildRequires:	sed >= 4.0
+#BuildRequires:        sed >= 4.0
 # replace with other requires if defined in setup.py
 Requires:	python-modules
 Requires:	python-zope.exceptions
