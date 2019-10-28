@@ -13,7 +13,7 @@ Summary:	Basic inter-process locks
 Summary(pl.UTF-8):	Podstawowe blokady pomiędzy procesami 
 Name:		python-%{pypi_name}
 Version:	1.2.1
-Release:	2
+Release:	3
 License:	ZPL 2.1
 Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/z/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
