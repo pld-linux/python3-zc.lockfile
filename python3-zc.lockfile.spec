@@ -7,7 +7,7 @@ Summary:	Basic inter-process locks
 Summary(pl.UTF-8):	Podstawowe blokady pomiędzy procesami 
 Name:		python3-%{module}
 Version:	3.0.post1
-Release:	1
+Release:	2
 License:	ZPL v2.1
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/zc.lockfile/
@@ -61,6 +61,9 @@ zope-testrunner-3 --test-path=src -v
 rm -rf $RPM_BUILD_ROOT
 
 %py3_install
+
+%{__rm} $RPM_BUILD_ROOT%{py3_sitescriptdir}/zc/lockfile/tests.py
+%{__rm} $RPM_BUILD_ROOT%{py3_sitescriptdir}/zc/lockfile/__pycache__/tests.*.py*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
